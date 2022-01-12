@@ -1,2 +1,3 @@
-web: python website/manage.py runserver 0.0.0.0:$PORT
-web: gunicorn hellodjango.wsgi
+web: gunicorn store.wsgi
+web: python store.py runserver 0.0.0.0:$PORT
+
